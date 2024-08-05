@@ -1,4 +1,3 @@
-// src/components/Items/MyPurchases.jsx
 import { useEffect, useState } from 'react';
 import axiosInstance from '../../axiosConfig';
 

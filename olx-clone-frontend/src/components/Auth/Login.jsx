@@ -1,4 +1,4 @@
-// src/components/Auth/Login.jsx
+
 import { useState } from 'react';
 import axiosInstance from '../../axiosConfig';
 
@@ -14,7 +14,7 @@ const Login = ({ setToken }) => {
       const token = response.data.token;
       setToken(token);
       localStorage.setItem('token', token);
-      window.location.href = '/'; // Redirect to home page
+      window.location.href = '/'; 
     } catch (err) {
       setError(err.response.data.message);
     }

@@ -1,4 +1,4 @@
-// src/components/Auth/Register.jsx
+
 import { useState } from 'react';
 import axiosInstance from '../../axiosConfig';
 
@@ -12,7 +12,7 @@ const Register = () => {
     e.preventDefault();
     try {
       await axiosInstance.post('/auth/register', { username, email, password });
-      window.location.href = '/login'; // Redirect to login page
+      window.location.href = '/login'; 
     } catch (err) {
       setError(err.response.data.message);
     }

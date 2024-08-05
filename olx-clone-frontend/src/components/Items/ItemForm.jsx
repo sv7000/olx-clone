@@ -6,7 +6,7 @@ const ItemForm = () => {
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
   const [image, setImage] = useState(null);
-  const [status, setStatus] = useState('unsold'); // Default status
+  const [status, setStatus] = useState('unsold'); 
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
@@ -15,7 +15,7 @@ const ItemForm = () => {
     const formData = new FormData();
     formData.append('name', name);
     formData.append('price', price);
-    formData.append('status', status); // Add status to form data
+    formData.append('status', status); 
     if (image) formData.append('image', image);
 
     try {

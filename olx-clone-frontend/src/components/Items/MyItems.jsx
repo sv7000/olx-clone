@@ -6,7 +6,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 const MyItems = () => {
   const [items, setItems] = useState([]);
   const [error, setError] = useState('');
-  const [loadingId, setLoadingId] = useState(null); // Track the loading state of an item
+  const [loadingId, setLoadingId] = useState(null); 
 
   useEffect(() => {
     const fetchMyItems = async () => {
