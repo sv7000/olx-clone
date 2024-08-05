@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:5000/api', // Update with your backend URL
+  baseURL: 'https://olx-clone-backend1.onrender.com', // Update with your backend URL
 });
 
 axiosInstance.interceptors.request.use(
